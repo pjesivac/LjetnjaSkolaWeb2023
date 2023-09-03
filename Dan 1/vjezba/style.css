@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  border: 1px solid black;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+input[type="text"] {
+  border-width: 3px 1px 1px 3px;
+  border-style: solid;
+  border-color: #8080809c;
+}
+
+/* #descriptionContainer {
+  padding: 0;
+} */
+textarea {
+  width: 100%;
+}
