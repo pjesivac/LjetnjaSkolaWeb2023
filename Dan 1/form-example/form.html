@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Form example</h1>
+    <form method="post">
+        <input type="text" placeholder="Enter text" value="test value">
+        <input type="number" placeholder="Enter number">
+        <input type="password" placeholder="Enter password">
+        </br></br>
+        <div>
+            <label for="option-1">
+                <input id="option-1" type="radio" name="options" value="1">
+                Radio 1
+            </label>
+            <label for="option-2">
+                <input id="option-2" type="radio" name="options" value="2">
+                Radio 2
+            </label>
+        </div>
+        <div>
+            <label for="option-3">
+                <input id="option-3" type="checkbox" name="checkbox-options" value="Ketchup">
+                Ketchup
+            </label>
+            <label for="option-4">
+                <input id="option-4" type="checkbox" name="checkbox-options" value="sir">
+                Sir
+            </label>
+            <label for="option-5">
+                <input id="option-5" type="checkbox" name="checkbox-options" value="3">
+                Origano
+            </label>
+        </div>
+        <div style="margin-top: 16px;"><input type="file" name="file" id=""></div>
+        <div>
+            <h2>Select</h2>
+            <select name="select" id="select">
+                <option value="" disabled>Select brand</option>
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="volvo">Volvo</option>
+            </select>
+        </div>
+        <div>
+            <h2>Text Area</h2>
+            <textarea name="comment" id="comment" cols="50" rows="10"
+                placeholder="Describe yourself here..."></textarea>
+        </div>
+        </br></br>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit" name="" id="" value="Submit">
+    </form>
+</body>
+
+</html>

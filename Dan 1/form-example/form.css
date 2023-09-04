@@ -1,0 +1,23 @@
+.styled-inputs input:valid {
+    border: 1px solid green;
+}
+
+.styled-inputs input:invalid {
+    border: 1px solid red;
+}
+
+.styled-inputs input:required {
+    border-width: 5px;
+}
+
+.styled-inputs input:optional {
+    border-width: 10px;
+}
+
+.styled-inputs input:out-of-range {
+    background-color: pink;
+}
+
+.styled-inputs input:in-range {
+    background-color: lightgreen;
+}
