@@ -1,0 +1,73 @@
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Stil za drugu tabelu */
+.custom-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+.custom-table th,
+.custom-table td {
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #3498db;
+    background-color: #3498db;
+    color: white;
+}
+
+.custom-table th {
+    background-color: #2980b9;
+}
+
+.custom-table td:nth-child(2) {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+
+.custom-table td:nth-child(2):hover {
+    background-color: #ff4343;
+    cursor: pointer;
+}
+
+/* Koristimo display: table za glavni kontejner tabele */
+.table-container {
+    display: table;
+    width: 100%;
+}
+
+/* Koristimo display: table-row-group za grupisanje redova */
+.table-row-group {
+    display: table-row-group;
+}
+
+/* Koristimo display: table-row za definisanje pojedinacnih redova */
+.table-row {
+    display: table-row;
+}
+
+/* Koristimo display: table-cell za celije tabele */
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
