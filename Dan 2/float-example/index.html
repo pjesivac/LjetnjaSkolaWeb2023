@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.my-list {
+            list-style-type: none;
+            margin: 0;
+        }
+
+        ul.my-list li {
+            float: left;
+            margin: 1rem;
+        }
+
+        /* ul.my-list li:last-child {
+            float: none;
+        } */
+
+        .wrapper {
+            border: 1px solid green;
+            background: rgba(144, 238, 144, 0.208);
+        }
+
+        .clearfix:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .container {
+            margin: 2rem 0;
+            clear: both;
+        }
+
+        .container>div {
+            width: 19%;
+            height: 30px;
+            border: solid 1px black;
+            float: left;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 15px;
+            background-color: #8BC34A;
+            color: white;
+        }
+
+        .container .broj2 {
+            height: 150px;
+        }
+
+        .container .broj4 {
+            height: 60px;
+            /* clear: left; */
+        }
+
+        .container .broj6 {
+            height: 60px;
+        }
+
+        .container .broj7 {
+            height: 60px;
+        }
+
+        /* .container .broj8 {
+            clear: left;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="wrapper clearfix">
+        <ul class="my-list">
+            <li><img src="../images/pineapple.jpeg" alt="img"></li>
+            <li><img src="../images/pineapple.jpeg" alt="img"></li>
+            <li><img src="../images/pineapple.jpeg" alt="img"></li>
+            <li><img src="../images/pineapple.jpeg" alt="img"></li>
+            <li><img src="../images/pineapple.jpeg" alt="img"></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="broj1">1</div>
+        <div class="broj2">2</div>
+        <div class="broj3">3</div>
+        <div class="broj4">4</div>
+        <div class="broj5">5</div>
+        <div class="broj6">6</div>
+        <div class="broj7">7</div>
+        <div class="broj8">8</div>
+        <div class="broj9">9</div>
+        <div class="broj10">10</div>
+        <div class="broj11">11</div>
+        <div class="broj12">12</div>
+    </div>
+
+</body>
+
+</html>
