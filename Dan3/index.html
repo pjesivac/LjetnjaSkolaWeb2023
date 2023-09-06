@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example title</title>
+    <style>
+        .highlight {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>List item 1</li>
+        <li>
+            List item 2
+            <ul>
+                <li>Subitem 1.1</li>
+                <li>Subitem 1.2</li>
+                <li>Subitem 1.3</li>
+                <li>Subitem 1.4</li>
+            </ul>
+        </li>
+        <li>List item 3</li>
+        <li>
+            List item 4
+            <ul>
+                <li>Subitem 2.1</li>
+                <li>Subitem 2.2</li>
+                <li>Subitem 2.3</li>
+                <li>Subitem 2.4</li>
+                <li>Subitem 2.5</li>
+            </ul>
+        </li>
+    </ul>
+
+    <script>
+        const listItemsWithUl = document.querySelectorAll('li:has(ul)');
+        const lastLiWithUl = listItemsWithUl[listItemsWithUl.length - 1];
+
+        if (lastLiWithUl) {
+            let listItems = lastLiWithUl.getElementsByTagName('li');
+            let lastItem = listItems[listItems.length - 1];
+            lastItem.classList.add('highlight');
+        } 
+    </script>
+</body>
+
+</html>
