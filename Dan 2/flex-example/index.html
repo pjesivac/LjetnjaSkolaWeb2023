@@ -8,10 +8,23 @@
     <style>
         .container {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 400px;
+            border: 2px solid green;
+        }
+
+        .container1 {
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .class-5 {
+            align-self: center;
         }
 
         .flex-item {
-            width: 50px;
+            width: 70px;
             height: 50px;
             margin: 5px;
             background-color: #3498db;
@@ -23,17 +36,22 @@
 </head>
 
 <body>
-    <h2>Flexbox Variations:</h2>
+    <!-- <h2>Flexbox Variations:</h2> -->
 
     <div class="container container1">
         <div class="flex-item">Item 1</div>
         <div class="flex-item">Item 2</div>
         <div class="flex-item">Item 3</div>
         <div class="flex-item">Item 4</div>
-        <div class="flex-item">Item 5</div>
+        <div class="flex-item class-5">Item 5</div>
+        <div class="flex-item">Item 6</div>
+        <div class="flex-item">Item 7</div>
+        <div class="flex-item">Item 8</div>
+        <div class="flex-item">Item 9</div>
+        <div class="flex-item">Item 10</div>
     </div>
 
-    <div class="container container2">
+    <!-- <div class="container container2">
         <div class="flex-item">Item 1</div>
         <div class="flex-item">Item 2</div>
         <div class="flex-item">Item 3</div>
@@ -47,7 +65,7 @@
         <div class="flex-item">Item 3</div>
         <div class="flex-item">Item 4</div>
         <div class="flex-item">Item 5</div>
-    </div>
+    </div> -->
 </body>
 
 </html>
